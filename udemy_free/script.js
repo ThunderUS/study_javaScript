@@ -1,48 +1,32 @@
 "use strict";
-/* let myName = "Anton";
 
-let bool = true;
+function myFirstApp(name, age) {
+    alert(`Hi my name ${name} and it's my first program`);
+    showSkills();
 
-let modal;
+    function showSkills() {
+        let skills = ['html', 'css', 'js'];
+        for (let i = 0; i < skills.length; i++) {
+            console.log(`i know ${skills[i]}`);
+        }
+    }
 
-let obj = {
-    dog: "pop",
-    cat: " cat"
-};
+    chekAge();
 
-let arr = [1, 2, "sdt", false];
-arr[0] = 2;
+    function chekAge() {
+        if (age > 18) {
+            console.log("You have good chance to be web programmer");
+        }
+         else {
+            console.log("wait a litel");
+        }
+    }
 
-console.log(myName);
+    function calcPow(num) {
+        return num * num;
+    }
 
-console.log(-4/0);
-console.log("gggg"*9);
-
-/* let answer = confirm("hy");
-console.log(answer); */
-/*let answer = prompt("How old are you", "");
-console.log(answer); */
-
-/* let answer = [],
-    question = [
-        "What is your name?",
-        "what is your second name",
-        "How old are you?"
-    ];
-
-for (let i = 0; i < question.length; i++) {
-    answer[i] = prompt(question[i], "");
+    console.log(calcPow(18));
 }
 
-document.write(answer); */
-function humanSayHellow(name) {
-    console.log(`hellow ${name}`);
-}
-
-humanSayHellow("ilon");
-
-function calc(a, b) {
-    console.log(a + b);
-}
-
-calc(4,5);
+myFirstApp("Anton",27);
