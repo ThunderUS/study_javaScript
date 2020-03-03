@@ -23,7 +23,7 @@ console.log(answer); */
 /*let answer = prompt("How old are you", "");
 console.log(answer); */
 
-let answer = [],
+/* let answer = [],
     question = [
         "What is your name?",
         "what is your second name",
@@ -34,4 +34,15 @@ for (let i = 0; i < question.length; i++) {
     answer[i] = prompt(question[i], "");
 }
 
-document.write(answer);
+document.write(answer); */
+function humanSayHellow(name) {
+    console.log(`hellow ${name}`);
+}
+
+humanSayHellow("ilon");
+
+function calc(a, b) {
+    console.log(a + b);
+}
+
+calc(4,5);
